@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PictoHunt | A Photo Search Engine</title>
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/detail.css" />
+  </head>
+  <body>
+    <!--navigation bar-->
+    <nav>
+      <a href=""><img src="./assets/logo.png" alt="logo" class="logo" /></a>
+      <a href="#"><h1 class="title">PictoHunt</h1></a>
+      <form action="./search.html" method="get">
+        <input
+          type="text"
+          name="q"
+          autocomplete="off"
+          placeholder="search anything"
+          class="search"
+        />
+        <input type="submit" value="SEARCH" class="search" />
+      </form>
+    </nav>
+
+    <!--Information display-->
+    <section>
+      <h1 class="heading">&lt; DETAIL FOR <span id="image_id"></span>&gt</h1>
+    </section>
+
+    <!--Footer-->
+    <footer>
+      <a href=""><h5>PictoHunt</h5></a>
+      <h1>|</h1>
+      <h5>Designed and Developed by Srujan</h5>
+      <h1>|</h1>
+      <a href=""><h5>GitHub</h5></a>
+    </footer>
+    <script src="./controllers/common.js"></script>
+    <script src="./controllers/detail.js"></script>
+  </body>
+</html>
